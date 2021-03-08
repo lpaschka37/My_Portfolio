@@ -1,12 +1,48 @@
 * {
     display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0rem;
 
 }
 
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {
+    color: ;
+    background-color: ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-header {}
+h1 {
+
+
+}
+
+h2 {
+
+}
+
+header {
+
+}
+
+nav {
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+nav ul li {
+    padding: 25px 40px;
+    
+}
 
 main {}
 
 section {}
+
+footer {
+
+}
