@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-:root {
-    
-}
-
 body {
     background-color: #b3b3b3;
         
@@ -23,16 +19,27 @@ header {
 
 }
 
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+}
+
 h1 {
     display: inline-block;
     font-size: 48px;
     color: white;
+    margin-bottom: -165px;
 }
 
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
     background-color: #5b86ff;
+    text-align: right;
+    width: 20%;
+    margin-left: -50px;
+    padding-right: 10px;
     
 }
 
@@ -49,11 +56,16 @@ a {
 a:hover {
     color: #d492ee;
     font-weight: bold;
-    shadow: inset 0px 0px 8px #d492ee; 
+    box-shadow: 0px 0px 8px #d492ee; 
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 p {
     font-size: 16px;
+    width: 100%;
+    padding-bottom: 8px;
+
 }
 
 .last-name {
@@ -69,27 +81,28 @@ p {
     background-position: center;
 }
 
-.topnav div {
-    display:flex;
-    justify-content: space-between;
+.topnav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    width: 100%;
 }
 
 .topnav div ul {
-    display: flex;    
     list-style-type: none;
 }
 
 .topnav div ul li {
     display: inline-block;
-    text-align: right;
     margin-left: 25px;
 }
 
+.nav-flex {
+    width: 100%;
+    text-align: right;
+}
 
 section {
     width: 75%;
@@ -101,20 +114,32 @@ section {
 .section-content {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;   
+    height: 100%;   
     background-color: #424242;
     color: #ffffff;
+    box-shadow: -4px -4px 4px #d492ee;
 }
 
 .section-content img {
     max-height: 200px;
 }
 
+.work-card {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 90%;
+    height: 250px;
+    margin: 10px auto;
+}
+
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
     margin-right: 20px;
     padding: 20px;
-    clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -126,22 +151,16 @@ aside {
     color: #ffffff;
 }
 
-.aside-content img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.card {
-
-}
-
 .card-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 8px solid #9d00db;
+    border: 4px solid #9d00db;
     margin: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 247, 255);
+    
     
 }
 
