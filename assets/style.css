@@ -45,7 +45,8 @@ h2 {
 
 h3 {
     margin-bottom: 10px;
-    text-align: center;    
+    text-align: center;
+        
 }
 
 h4 {
@@ -54,6 +55,8 @@ h4 {
     width: 100%;
     margin: 20px ;
     background-color: #089cff;
+    text-decoration: none;
+    color: white;
 }
 
 .icon {
@@ -65,12 +68,12 @@ main {
     flex: 1 0 70%;
 }
 
-a {
+.nav {
     color: #089cff;
     text-decoration: none;
 }
 
-a:hover {
+.nav:hover {
     color: #62b0e4;
     font-weight: bold;
     text-shadow: 0px 0px 8px #6ebcf0;
